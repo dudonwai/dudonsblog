@@ -2986,13 +2986,44 @@ select[multiple].form-group-lg .form-control {
     padding-top: 6px;
   }
 }
+.button1 {
+   border-top: 1px solid #f7df40;
+   background: #deae00;
+   background: -webkit-gradient(linear, left top, left bottom, from(#bfc200), to(#deae00));
+   background: -webkit-linear-gradient(top, #bfc200, #deae00);
+   background: -moz-linear-gradient(top, #bfc200, #deae00);
+   background: -ms-linear-gradient(top, #bfc200, #deae00);
+   background: -o-linear-gradient(top, #bfc200, #deae00);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button1:hover {
+   border-top-color: #ff8c00;
+   background: #ff8c00;
+   color: #ffffff;
+   }
+.button1:active {
+   border-top-color: #ebe705;
+   background: #ebe705;
+   }
 .btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 1.0;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;

@@ -9,3 +9,5 @@ urlpatterns = patterns('',
     url(r'^post/(?P<pk>\d+)/detail/$', coreviews.PostDetailView.as_view(), name='location_list'),
 
 )
+
+

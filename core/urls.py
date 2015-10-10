@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
-from django.conf.urls import include, url
 import core.views as coreviews
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 
 
@@ -12,7 +11,3 @@ urlpatterns = patterns('',
     url(r'^post/(?P<pk>\d+)/detail/$', coreviews.PostDetailView.as_view(), name='location_list'),
 
 )
-
-
-urlpatterns += staticfiles_urlpatterns()
-

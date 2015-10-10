@@ -1,6 +1,9 @@
 from django.conf.urls import patterns, include, url
 from django.conf.urls import include, url
 import core.views as coreviews
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+
 
 urlpatterns = patterns('',
 
@@ -10,4 +13,6 @@ urlpatterns = patterns('',
 
 )
 
+
+urlpatterns += staticfiles_urlpatterns()
 

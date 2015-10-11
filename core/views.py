@@ -10,10 +10,10 @@ import core.models as coremodels
 class BlogView(TemplateView):
 	template_name = "blog/index.html"
 
-class ListView(ListView):
+class PostListView(ListView):
 	template_name = "blog/list.html"
 
-class PostView(DetailView):
+class PostDetailView(DetailView):
 	model = coremodels.Post
 	template_name = "post/20150930.html"
 

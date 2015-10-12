@@ -15,4 +15,4 @@ class PostListView(ListView):
 
 class PostDetailView(DetailView):
 	model = coremodels.Post
-	template_name = "post/20150930.html"
+	template_name = "post/detail.html"

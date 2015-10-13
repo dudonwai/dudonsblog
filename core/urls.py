@@ -5,5 +5,6 @@ urlpatterns = patterns('',
     url(r'^$', coreviews.BlogView.as_view()),
     url(r'^post/$', coreviews.PostListView.as_view()),
     url(r'^post/(?P<pk>\d+)/detail/$', coreviews.PostDetailView.as_view(), name='post_list'),
+    url(r'^20150930/', coreviews.BlogView.as_view()),
 
 )

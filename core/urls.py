@@ -7,6 +7,3 @@ urlpatterns = patterns('',
     url(r'^post/list.html', coreviews.PostListView.as_view()),
     url(r'^blog/20150930', coreviews.Blog20150930View.as_view()),
 )
-
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-urlpatterns += staticfiles_urlpatterns()

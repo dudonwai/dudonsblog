@@ -161,7 +161,11 @@
         <div class="row"> 
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
+<<<<<<< HEAD:templates/blog/index.html
                     <a href="blog/20150930">
+=======
+                    <a href="{% static "blog/20150930" %}">
+>>>>>>> df3c3496cde65ca4bef85758e5a06da6b851dfba:templates/blog/index.html
                         <h2 class="post-title">
                             Why Do I Blog?
                         </h2>
@@ -221,6 +225,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            {% block pagination %}
+            {% endblock %}
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">

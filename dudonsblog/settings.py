@@ -40,6 +40,17 @@ TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
 
 # Application definition
 
+TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
+"django.core.context_processors.debug",
+"django.core.context_processors.i18n",
+"django.core.context_processors.media",
+"django.core.context_processors.static",
+"django.core.context_processors.tz",
+"django.contrib.messages.context_processors.messages",
+"django.core.context_processors.request"
+ "django.contrib.admin.templatetags.staticfiles"
+)
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -81,11 +92,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'dudonsblog.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-
 ON_HEROKU = os.environ.get('ON_HEROKU')
 
 if ON_HEROKU == True:
@@ -100,6 +106,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }       
+
 
 # Honour the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -136,3 +143,5 @@ STATICFILES_DIRS = (
     )
 
 STATIC_ROOT = 'staticfiles'
+
+# OPTIMIZELY_ACCOUNT_NUMBER = ''

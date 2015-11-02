@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.base import TemplateView
+from django.views.generic.base import TemplateView 
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 import core.models as coremodels
@@ -17,6 +17,3 @@ class PostListView(ListView):
 class Blog20150930View(TemplateView):
     model = coremodels.Post
     template_name = 'blog/20150930.html'
-
-    # context_object_name = 'location'
-

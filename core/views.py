@@ -13,11 +13,10 @@ class BlogView(TemplateView):
 class PostListView(ListView):
 	model = coremodels.Post
 	template_name = "post/list.html"
-	paginate_by = 5
 
-class PostDetailView(DetailView):
+class Blog20150930View(TemplateView):
     model = coremodels.Post
-    template_name = 'post/template.html'
+    template_name = 'blog/20150930.html'
 
     # context_object_name = 'location'
 

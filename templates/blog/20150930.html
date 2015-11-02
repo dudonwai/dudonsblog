@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% block head %}
+
 <head>
 
     <meta charset="utf-8">
@@ -34,6 +36,10 @@
 
 </head>
 
+{% endblock %}
+
+<script src="//cdn.optimizely.com/js/3444620947.js"></script>
+
 <body>
 
     <!-- Navigation -->
@@ -49,6 +55,8 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
+
+            {% block navigation %}
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -68,9 +76,14 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
+            {% endblock %}
+
         </div>
         <!-- /.container -->
     </nav>
+
+    {% block header %}
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -87,6 +100,12 @@
             </div>
         </div>
     </header>
+
+    {% endblock %}
+
+    {% block maincontent 
+
+    <hr>
 
     <!-- Post Content -->
     <article>
@@ -134,6 +153,10 @@
 
     <hr>
 
+    {% endblock %}
+
+    {% block footer %}
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -170,6 +193,8 @@
             </div>
         </div>
     </footer>
+
+    {% end block %}
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

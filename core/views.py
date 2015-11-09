@@ -5,15 +5,26 @@ from django.views.generic.detail import DetailView
 import core.models as coremodels
 
 
-# Create your views here.
+# Landing Page for Index
 
-class BlogView(TemplateView):
+class LandingView(TemplateView):
 	template_name = "blog/index.html"
 
-class PostListView(ListView):
-	model = coremodels.Post
-	template_name = "post/list.html"
+
+
+# Template for About, Archive, Contact
+
+class BasicView(TemplateView):
+	template_name = "themes/basic.html"
+
+class BlogView(TemplateView):
+    model = coremodels.Post
+    template_name = 'themes/blog.html'
+
+
+
+# Blog Posts
 
 class Blog20150930View(TemplateView):
     model = coremodels.Post
-    template_name = 'blog/20150930.html'
+    template_name = 'blog/20150930-whyblog.html'

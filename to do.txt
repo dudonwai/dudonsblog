@@ -1,0 +1,4 @@
+social media (twitter, facebook, github)
+blog theme
+about/archive/recent post theme
+basic webpages, about/archive/recent consistent

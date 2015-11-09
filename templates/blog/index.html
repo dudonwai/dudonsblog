@@ -70,6 +70,9 @@
                         <a href="{% static "post.html" %}">Recent Posts</a>
                     </li>
                     <li>
+                        <a href="{% static "post.html" %}">Archive</a>
+                    </li>
+                    <li>
                         <a href="{% static "contact.html" %}">Contact</a>
                     </li>
                 </ul>
@@ -161,7 +164,7 @@
         <div class="row"> 
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="blog/20150930">
+                    <a href="blog/20150930-whyblog">
                         <h2 class="post-title">
                             Why Do I Blog?
                         </h2>
@@ -173,7 +176,7 @@
                 </div>
                 <hr>
                 <div class="post-preview">
-                    <a href="{% static "post1.html" %}">
+                    <a href="blog/20151025-education">
                         <h2 class="post-title">
                             Is Post-Secondary Education Useful?
                         </h2>
@@ -221,13 +224,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            {% block pagination %}
-            {% endblock %}
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="{% static "#" %}">
+                            <a href="https://twitter.com/DudonWai">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -235,7 +236,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{% static "#" %}">
+                            <a href="https://www.facebook.com/dudon.wai">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -243,7 +244,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{% static "#" %}">
+                            <a href="https://github.com/dudonwai">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>

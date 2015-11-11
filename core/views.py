@@ -17,9 +17,9 @@ class LandingView(TemplateView):
 class BasicView(TemplateView):
 	template_name = "themes/basic.html"
 
-class BlogView(TemplateView):
-    model = coremodels.Post
-    template_name = 'themes/blog.html'
+class BlogView(ListView):
+	model = coremodels.Post
+	template_name = "blog/20151025-education.html"
 
 
 

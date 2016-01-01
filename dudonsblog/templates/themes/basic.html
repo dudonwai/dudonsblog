@@ -1,0 +1,274 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dude, Why?</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static "css/clean-blog.min.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+{% endblock %}
+
+<script src="//cdn.optimizely.com/js/3444620947.js"></script>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% static "index.html" %}">Dudon Wai</a>
+            </div>
+
+            {% block navigation %}
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{% static "index.html" %}">Home</a>
+                    </li>                    
+                    <li>
+                        <a href="{% static "about.html" %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% static "post.html" %}">Recent Posts</a>
+                    </li>
+                    <li>
+                        <a href="{% static "post.html" %}">Archive</a>
+                    </li>
+                    <li>
+                        <a href="{% static "contact.html" %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+            {% endblock %}
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    {% block header %}
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('static/img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Dude, Why?</h1>
+                        <hr class="small">
+                        <span class="subheading">Asking Big Questions and Looking For Answers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Begin MailChimp Signup Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="//herokuapp.us11.list-manage.com/subscribe/post?u=ec7811445c4a1fdfc533b910b&amp;id=e33720133e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <center>
+                                <h1>STILL UNDER CONSTRUCTION</h1>
+                                <h2>Subscribe and I'll let you know when I make my first post!</h2>
+                            </center>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">First Name   <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+                                </label>
+                                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_ec7811445c4a1fdfc533b910b_e33720133e" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+                </div>
+            </div>
+        </div>
+<!--End mc_embed_signup-->
+    
+    {% endblock %}
+
+    {% block maincontent %}
+
+    <hr>
+
+    <!-- Main Content -->
+    
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="blog/20150930-whyblog">
+                        <h2 class="post-title">
+                            Why Do I Blog?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            I'm not an expert, but I want to share things that I have had the benefit of being exposed to.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 20, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="blog/20151025-education">
+                        <h2 class="post-title">
+                            Is Post-Secondary Education Useful?
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 21, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="{% static "post1.html" %}">
+                        <h2 class="post-title">
+                            Are we sp<font color="black">oil</font>ed?
+                        </h2>
+                        <h3 class="post-subtitle">
+                            What does a world without oil look like? Is our growing energy use sustainable in the future?
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 22, 2015</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="{% static "post1.html" %}">
+                        <h2 class="post-title">
+                            Who Should You Vote For in October?
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 23, 2015</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="{% static "#" %}">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    {% endblock %}
+
+    {% block footer %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/DudonWai">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/dudon.wai">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/dudonwai">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Dudon Wai 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {% endblock %}
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "js/clean-blog.min.js" %}"></script>
+
+</body>
+
+</html>

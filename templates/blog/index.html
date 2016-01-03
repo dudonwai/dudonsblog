@@ -39,11 +39,11 @@
 
 <script src="//cdn.optimizely.com/js/3444620947.js"></script>
 
-<body>
+<body id="page-top" class="index">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -56,25 +56,26 @@
             </div>
 
             {% block navigation %}
-
             <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{% static "index.html" %}">Home</a>
+                        <a href="#page-top">Home</a>
                     </li>                    
                     <li>
                         <a href="{% static "about.html" %}">About</a>
                     </li>
                     <li>
-                        <a href="{% static "about.html" %}">How It Works</a>
+                        <a class="page-scroll" href="#services">How It Works</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#blog">Blog</a>
+                    </li>                    
                     <li>
                         <a href="{% static "about.html" %}">Start Your Project</a>
                     </li>
-                    <li>
-                        <a href="{% static "contact.html" %}">Connect With Us</a>
-                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -86,7 +87,6 @@
     </nav>
 
     {% block header %}
-
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('static/img/home-bg.jpg')">
@@ -96,6 +96,7 @@
                     <div class="site-heading">
                         <span><h2>Build Your Brand.</h2></span>
                         <span><h2>Grow Your Business.</h2></span>
+                        <span><h2>START YOUR PROJECT</h2></span>
                     </div>
                 </div>
             </div>
@@ -104,8 +105,62 @@
 
     {% endblock %}
 
+
+    {% block maincontent %}
+
+<!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How It Works</h2>
+                    <h3 class="section-subheading text-muted">A simple process from idea to launch</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+<!--                     <img src= "{% static "img/python_flag.svg" %}"> -->
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">STEP 1</h4>
+                    <h4 class="text-muted">Submit Your Website Project</h4>
+                </div>
+                <div class="col-md-4"> 
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">STEP 2</h4>
+                    <h4 class="text-muted">Get A Budget Recommendation</h4>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">STEP 3</h4>
+                    <h4 class="text-muted">Handpicked Team Contacts You</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src= "{% static "img/greyadv-logo.jpg" %}">
+                    <h4 class="start-project-heading">START YOUR PROJECT</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<hr>
+
 <!-- Begin MailChimp Signup Form -->
-    <div class="container">
+<section id="signup">
+    <div class="container"
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
@@ -118,7 +173,8 @@
                     <form action="//herokuapp.us11.list-manage.com/subscribe/post?u=ec7811445c4a1fdfc533b910b&amp;id=e33720133e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
                             <center>
-                                <h2>Submit a Project and We'll Get In Touch With You</h2>
+                                <h1>GreyAdv Blog</h1>
+                                <h2>Subscribe Today!</h2>
                             </center>
                             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                             <div class="mc-field-group">
@@ -150,62 +206,54 @@
                 </div>
             </div>
         </div>
-                <!--End mc_embed_signup-->
+    </section>
+<!--End mc_embed_signup-->
 
 
-
-
-    {% block maincontent %}
-
-    <hr>
-
-    <!-- Main Content -->
-    
+<!-- Blog Section -->
+<section id="blog">
     <div class="container">
         <div class="row"> 
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
                     <a href="blog/20150930-whyblog">
                         <h2 class="post-title">
-                            Why Do I Blog?
+                            Why Do I Need a Website?
                         </h2>
                         <h3 class="post-subtitle">
-                            I'm not an expert, but I want to share things that I have had the benefit of being exposed to.
+                            carricdesign.com
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 20, 2015</p>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on October 20, 2015</p>
                 </div>
                 <hr>
+
                 <div class="post-preview">
-                    <a href="blog/20151025-education">
+                    <a href="blog/20150930-whyblog">
                         <h2 class="post-title">
-                            Is Post-Secondary Education Useful?
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 21, 2015</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="{% static "post1.html" %}">
-                        <h2 class="post-title">
-                            Are we sp<font color="black">oil</font>ed?
+                            19 Reasons Your Business Should Be Writing a Blog?
                         </h2>
                         <h3 class="post-subtitle">
-                            What does a world without oil look like? Is our growing energy use sustainable in the future?
+                            www.sproutcontent.com/blog/19-Reasons-Why-Your-Business-Should-Be-Writing-a-Blog
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 22, 2015</p>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on November 15, 2015</p>
                 </div>
                 <hr>
+
                 <div class="post-preview">
-                    <a href="{% static "post1.html" %}">
+                    <a href="blog/20150930-whyblog">
                         <h2 class="post-title">
-                            Who Should You Vote For in October?
+                            The Future of Marketing and Sales
                         </h2>
+                        <h3 class="post-subtitle">
+                            www.mckinsey.com/client_service/marketing_and_sales/latest_thinking/big_data_analytics_and_the_future_of_marketing_and_sales
+                        </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on September 23, 2015</p>
+                    <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on December 18, 2015</p>
                 </div>
                 <hr>
+
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
@@ -215,7 +263,7 @@
             </div>
         </div>
     </div>
-
+    </section>
     <hr>
 
     {% endblock %}
@@ -227,7 +275,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
+<!--                     <ul class="list-inline text-center">
                         <li>
                             <a href="https://twitter.com/DudonWai">
                                 <span class="fa-stack fa-lg">
@@ -252,8 +300,8 @@
                                 </span>
                             </a>
                         </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Dudon Wai 2015</p>
+                    </ul> -->
+                    <p class="copyright text-muted">Copyright &copy; GreyAdv 2015</p>
                 </div>
             </div>
         </div>

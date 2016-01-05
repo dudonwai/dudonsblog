@@ -52,7 +52,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% static "index.html" %}">Grey Advertising</a>
+                <a class="navbar-brand">Grey Advertising</a>
+                <!-- <a class="navbar-brand" href="{% static "index.html" %}">Grey Advertising</a> -->
             </div>
 
             {% block navigation %}
@@ -89,14 +90,31 @@
     {% block header %}
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('static/img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('static/img/light-red-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <span><h2>Build Your Brand.</h2></span>
-                        <span><h2>Grow Your Business.</h2></span>
-                        <span><h2>START YOUR PROJECT</h2></span>
+                        <div class="col-md-6">
+                            <span><img 
+                                class="img-circle"
+                                src="{% static "img/greyadv-logo.jpg" %}" 
+                                height="250" 
+                                width="250"
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                &nbsp;
+                                <span><h2>Build Your Brand.</h2></span>
+                                <span><h2>Grow Your Business.</h2></span>
+                                &nbsp;
+                            </div>
+                            <div class="row">
+                                <button href="#" type="button" class="btn">START YOUR PROJECT</button>
+                            </div>
+                        </div>
+                        &nbsp;
                     </div>
                 </div>
             </div>
@@ -141,7 +159,7 @@
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">STEP 3</h4>
-                    <h4 class="text-muted">Handpicked Team Contacts You</h4>
+                    <h4 class="text-muted">Start Developing Your Website</h4>
                 </div>
             </div>
         </div>
@@ -149,7 +167,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <img src= "{% static "img/greyadv-logo.jpg" %}">
+                    <img src="{% static "img/greyadv-logo.jpg" %}" height="200" width="200">
                     <h4 class="start-project-heading">START YOUR PROJECT</h4>
                 </div>
             </div>
@@ -247,15 +265,18 @@
                             The Future of Marketing and Sales
                         </h2>
                         <h3 class="post-subtitle">
-                            www.mckinsey.com/client_service/marketing_and_sales/latest_thinking/big_data_analytics_and_the_future_of_marketing_and_sales
-                        </h3>
+                            big data analytics and the future of marketing and sales
+                        </h3></span>
                     </a>
                     <p class="post-meta">Posted by <a href="{% static "#" %}">Dudon Wai</a> on December 18, 2015</p>
                 </div>
                 <hr>
 
+
+ -->
                 <!-- Pager -->
-<!--                 <ul class="pager">
+<!--
+                <ul class="pager">
                     <li class="next">
                         <a href="{% static "#" %}">Older Posts &rarr;</a>
                     </li>

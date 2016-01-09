@@ -1,35 +1,57 @@
 {% extends "themes/blog.html" %}
 
 {% block title %}
-Title
+GreyAdv Blog
+{% endblock %}
+
+{% block navigation %}
+    <li>
+        <a href="blog/index">Home</a>
+    </li>                    
+    <li>
+        <a href="blog/about">About</a>
+    </li>
+    <li>
+        <a href="blog/index/#services">How It Works</a>
+    </li>
+    <li>
+        <a class="#page-top">Blog</a>
+    </li>                    
+    <li>
+        <a href="blog/startproject">Start Your Project</a>
+    </li>
 {% endblock %}
 
 {% block blogtitle %}
-Blog Title
+Welcome to the Blog!
 {% endblock %}
 
 {% block blogdescription %}
-Short Description
+<!-- We've done the research so you don't have to -->
 {% endblock %}
 
-
-{% block blogauthordate %}Posted by <a href="#">Dudon Wai</a> on DATE{% endblock %}
-
 {% block maincontent %}
-	<p>The first paragraph is meant to hook the audience and also briefly explain what the topic of the post is.  </p>
+    <h2 class="page-heading">Categories</h2>
+	<p>Put a list of categories + blogs here</p>
 
-    <h2 class="section-heading">A Concise Subtitle</h2>
-
-    <p>These paragraphs are meant to elaborate on the subtitle topic.</p>
-
-    <blockquote>Insert any quotes that you want to share, or links you might want to direct your audience</blockquote>
-
-    <a href="#">
-        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-    </a>
-    <span class="caption text-muted">Caption for the picture can go here</span>
-
-    <p>Close your post with a little blurb that ties in with the intro, and gives direction for where the audience can get more information</p>
-
-    <p>[1] You should have a number of references that you can refer to here, to avoid too many tangents in the body of the text <a href="http://spaceipsum.com/">CLICK HERE</a></p>
+<!-- Category 1 -->
+    <h2 class="category1-heading">Category #1</h2>
+    <div class="col-md-6">
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@dudonwai/8-reasons-you-need-a-website-642776e05f82">8 Reasons You Need A Website</a> 
+    </div>
+    <div class="col-md-6">
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@dudonwai/8-reasons-you-need-a-website-642776e05f82">8 Reasons You Need A Website</a> 
+    </div>
+    &nbsp;
+    <hr>
+<!-- Category 2 -->
+    <h2 class="category2-heading">Category #2</h2>
+    <div class="col-md-6">
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@dudonwai/8-reasons-you-need-a-website-642776e05f82">8 Reasons You Need A Website</a> 
+    </div>
+    <div class="col-md-6">
+        <script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" href="https://medium.com/@dudonwai/8-reasons-you-need-a-website-642776e05f82">8 Reasons You Need A Website</a> 
+    </div>
+    &nbsp;
+    <hr>
 {% endblock %}

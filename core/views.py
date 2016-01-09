@@ -12,19 +12,12 @@ class LandingView(TemplateView):
 
 
 
-# Template for About, Archive, Contact
+# Template for About, Blog, StartProject
 
 class BasicView(TemplateView):
 	template_name = "themes/basic.html"
 
 class BlogView(ListView):
 	model = coremodels.Post
-	template_name = "blog/20151025-education.html"
+	template_name = "blog/blog.html"
 
-
-
-# Blog Posts
-
-class Blog20150930View(TemplateView):
-    model = coremodels.Post
-    template_name = 'blog/20150930-whyblog.html'

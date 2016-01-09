@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^$', coreviews.LandingView.as_view()),
     url(r'^blog/about', coreviews.BlogView.as_view()),
     url(r'^blog/blog', coreviews.BlogView.as_view()),
+    url(r'^blog/startproject', coreviews.BlogView.as_view()),
 )

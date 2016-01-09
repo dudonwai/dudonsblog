@@ -51,34 +51,33 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Dudon Wai</a>
+                <a class="navbar-brand" href="/">GreyAdv</a>
             </div>
-
-            <!-- {% block navigation %} -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {% block navigation %}
                     <li>
-                        <a href="{% static "index.html" %}">Home</a>
+                        <a href="/">Home</a>
                     </li>                    
                     <li>
-                        <a href="{% static "about.html" %}">About</a>
+                        <a href="blog/about">About</a>
                     </li>
                     <li>
-                        <a href="{% static "post.html" %}">Recent Posts</a>
+                        <a href="blog/index/#services">How It Works</a>
                     </li>
                     <li>
-                        <a href="{% static "post.html" %}">Archive</a>
-                    </li>
+                        <a class="#page-top">Blog</a>
+                    </li>                    
                     <li>
-                        <a href="{% static "contact.html" %}">Contact</a>
+                        <a href="blog/startproject">Start Your Project</a>
                     </li>
+                    {% endblock %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
 
-            <!-- {% endblock %} -->
 
         </div>
         <!-- /.container -->
@@ -94,8 +93,8 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         <h1>{% block blogtitle %}{% endblock %}</h1>
+                        &nbsp;
                         <h2 class="subheading">{% block blogdescription %}{% endblock %}</h2>
-                        <span class="meta">{% block blogauthordate %}{% endblock %}</span>
                     </div>
                 </div>
             </div>

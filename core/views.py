@@ -25,6 +25,6 @@ class AboutView(ListView):
 	model = coremodels.Post
 	template_name = "blog/about.html"
 
-class StartProjectView(ListView):
-	model = coremodels.Post
-	template_name = "blog/startproject.html"
+# class StartProjectView(ListView):
+# 	model = coremodels.Post
+# 	template_name = "blog/startproject.html"

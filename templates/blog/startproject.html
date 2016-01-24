@@ -5,33 +5,41 @@ Why Do I Blog?
 {% endblock %}
 
 {% block blogtitle %}
-Why Do I Blog?
+Start Your Project!
 {% endblock %}
 
 {% block blogdescription %}
-I'm not an expert, but I want to share things that I have had the benefit of being exposed to
+Send us your info and we'll be in touch!
 {% endblock %}
-
-{% block blogauthordate %}Posted by <a href="#">Dudon Wai</a> on DATE{% endblock %}
 
 {% block maincontent %}
-    <p>The first paragraph is meant to hook the audience and also briefly explain what the topic of the post is.  </p>
 
-    <h2 class="section-heading">A Concise Subtitle</h2>
+    <div id="wufoo-zxon0bs0vlegih">
+        Fill out my <a href="https://greyadv.wufoo.com/forms/zxon0bs0vlegih">online form</a>.
+    </div>
+    <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.
+    </div>
+    <script type="text/javascript">var zxon0bs0vlegih;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'greyadv',
+        'formHash':'zxon0bs0vlegih',
+        'autoResize':true,
+        'height':'723',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { zxon0bs0vlegih = new WufooForm();zxon0bs0vlegih.initialize(options);zxon0bs0vlegih.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');
+    </script>
 
-    <p>These paragraphs are meant to elaborate on the subtitle topic.</p>
 
-    <blockquote>Insert any quotes that you want to share, or links you might want to direct your audience</blockquote>
-
-    <a href="#">
-        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-    </a>
-    <span class="caption text-muted">Caption for the picture can go here</span>
-
-    <p>Close your post with a little blurb that ties in with the intro, and gives direction for where the audience can get more information</p>
-
-    <p>[1] You should have a number of references that you can refer to here, to avoid too many tangents in the body of the text <a href="http://spaceipsum.com/">CLICK HERE</a></p>
 {% endblock %}
+
 
 
 

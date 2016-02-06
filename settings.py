@@ -58,7 +58,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'core'
+    "djstripe",
 )
 
 MIDDLEWARE_CLASSES = (
@@ -145,3 +146,25 @@ STATICFILES_DIRS = (
 STATIC_ROOT = 'staticfiles'
 
 # OPTIMIZELY_ACCOUNT_NUMBER = ''
+
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "<your publishable key>")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "<your secret key>")
+
+DJSTRIPE_PLANS = {
+    "monthly": {
+        "stripe_plan_id": "pro-monthly",
+        "name": "Web App Pro ($25/month)",
+        "description": "The monthly subscription plan to WebApp",
+        "price": 2500,  # $25.00
+        "currency": "usd",
+        "interval": "month"
+    },
+    "yearly": {
+        "stripe_plan_id": "pro-yearly",
+        "name": "Web App Pro ($199/year)",
+        "description": "The annual subscription plan to WebApp",
+        "price": 19900,  # $199.00
+        "currency": "usd",
+        "interval": "year"
+    }
+}
